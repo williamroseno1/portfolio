@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de William Roseno, com foco em desenvolvimento web, análise de dados e automação de processos para empresas.">
     <title>William Roseno | Sites, Dados e Automação</title>
-    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="src/assets/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <header>
         <nav class="container nav-bar">
             <a href="#top" class="logo" aria-label="William Roseno">
-                <img src="favicon/favicon-32x32.png" alt="Logo William Roseno" class="brand-mark">
+                <img src="src/assets/icons/favicon-32x32.png" alt="Logo William Roseno" class="brand-mark">
             </a>
             <ul class="nav-links">
                 <li><a href="#services">Serviços</a></li>
@@ -229,7 +229,7 @@
             <div class="project-grid">
                 <article class="project-card">
                     <div class="card-image">
-                        <img src="img/analise de dados eda.png" alt="Dashboard de análise de dados">
+                        <img src="src/assets/images/analise de dados eda.png" alt="Dashboard de análise de dados">
                     </div>
                     <div class="card-content">
                         <span class="project-type">Dashboard & insights</span>
@@ -246,7 +246,7 @@
 
                 <article class="project-card">
                     <div class="card-image">
-                        <img src="img/automcacao.png" alt="Automação de processos com Python">
+                        <img src="src/assets/images/automcacao.png" alt="Automação de processos com Python">
                     </div>
                     <div class="card-content">
                         <span class="project-type">Automação</span>
@@ -263,7 +263,7 @@
 
                 <article class="project-card">
                     <div class="card-image">
-                        <img src="img/hclocacoes.png" alt="Projeto de site para empresa de equipamentos">
+                        <img src="src/assets/images/hclocacoes.png" alt="Projeto de site para empresa de equipamentos">
                     </div>
                     <div class="card-content">
                         <span class="project-type">Website institucional</span>
@@ -328,72 +328,7 @@
         </div>
     </footer>
 
-    <script>
-        const revealItems = document.querySelectorAll('.reveal');
-
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.18 });
-
-        revealItems.forEach((item) => revealObserver.observe(item));
-
-        const counters = document.querySelectorAll('.stat-number');
-
-        const animateCounter = (counter) => {
-            const target = Number(counter.dataset.target);
-            const duration = 1200;
-            const startTime = performance.now();
-
-            const tick = (time) => {
-                const progress = Math.min((time - startTime) / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                const value = Math.round(target * eased);
-                counter.textContent = `${value}${target === 35 ? '%' : target === 4 ? '+' : ''}`;
-
-                if (progress < 1) {
-                    requestAnimationFrame(tick);
-                } else {
-                    counter.textContent = `${target}${target === 35 ? '%' : target === 4 ? '+' : ''}`;
-                }
-            };
-
-            requestAnimationFrame(tick);
-        };
-
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.7 });
-
-        counters.forEach((counter) => counterObserver.observe(counter));
-
-        const heroVisual = document.querySelector('.hero-visual');
-        if (heroVisual) {
-            heroVisual.addEventListener('pointermove', (event) => {
-                const rect = heroVisual.getBoundingClientRect();
-                const x = (event.clientX - rect.left) / rect.width;
-                const y = (event.clientY - rect.top) / rect.height;
-
-                const rotateY = (x - 0.5) * 12;
-                const rotateX = (0.5 - y) * 12;
-
-                heroVisual.querySelector('.dashboard-card').style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
-            });
-
-            heroVisual.addEventListener('pointerleave', () => {
-                heroVisual.querySelector('.dashboard-card').style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
-            });
-        }
-    </script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
 
