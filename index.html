@@ -3,148 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Roseno | Sites, Dados e Automação para Empresas</title>
+    <meta name="description" content="Portfólio de William Roseno, com foco em desenvolvimento web, análise de dados e automação de processos para empresas.">
+    <title>William Roseno | Sites, Dados e Automação</title>
     <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <nav class="container">
-            <div class="logo">William Roseno.</div>
+        <nav class="container nav-bar">
+            <a href="#top" class="logo" aria-label="William Roseno">
+                <img src="favicon/favicon-32x32.png" alt="Logo William Roseno" class="brand-mark">
+            </a>
             <ul class="nav-links">
+                <li><a href="#services">Serviços</a></li>
                 <li><a href="#work">Projetos</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
+            <a href="https://wa.me/5527996445761?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto" class="nav-cta">Faça contato</a>
         </nav>
     </header>
 
-    <main>
+    <main id="top">
         <section class="hero container">
-            <div class="hero-content">
-                <p class="greeting">Desenvolvo sites e soluções com dados para empresas que querem crescer online</p>
-                <div class="hero-mockup">
-                    <div class="window">
-                        <div class="header">
-                            <span></span><span></span><span></span>
-                        </div>
+            <div class="hero-copy">
+                <span class="eyebrow">Análise de dados • Websites • Automação</span>
+                <h1>Transformo informação em crescimento real para negócios.</h1>
+                <p class="sub-hero">
+                    Crio experiências digitais e soluções estratégicas com dados, automação e desenvolvimento web para empresas que querem ganhar escala, eficiência e competitividade.
+                </p>
 
-                        <div class="cards">
-                            <div class="card">
-                                <p>Eficiência</p>
-                                <h2>+35%</h2>
-                            </div>
-                            <div class="card">
-                                <p>Tempo</p>
-                                <h2>-50%</h2>
-                            </div>
-                            <div class="card">
-                                <p>Automação</p>
-                                <h2>120+</h2>
-                            </div>
-                        </div>
-
-                        <div class="chart">
-                            <div style="--h:40%"></div>
-                            <div style="--h:70%"></div>
-                            <div style="--h:55%"></div>
-                            <div style="--h:90%"></div>
-                            <div style="--h:95%"></div>
-                        </div>
-                    </div>
-                </div>
-                <p class="sub-hero">Crio sites profissionais, automatizo processos e analiso dados para gerar mais eficiência, presença digital e tomada de decisão estratégica.</p>
                 <div class="hero-btns">
                     <a href="https://wa.me/5527996445761?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto" class="btn btn-primary">Vamos conversar</a>
-                    <a href="#work" class="btn btn-outline">Ver trabalhos</a>
+                    <a href="#work" class="btn btn-secondary">Ver projetos</a>
+                </div>
+
+                <ul class="hero-metrics" aria-label="Principais métricas">
+                    <li>
+                        <strong class="stat-number" data-target="35">0</strong>
+                        <span>mais eficiência</span>
+                    </li>
+                    <li>
+                        <strong class="stat-number" data-target="120">0</strong>
+                        <span>tarefas automatizadas</span>
+                    </li>
+                    <li>
+                        <strong class="stat-number" data-target="4">0</strong>
+                        <span>áreas de atuação</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Mockup de dashboard e indicadores">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <span></span><span></span><span></span>
+                    </div>
+
+                    <div class="dashboard-topbar">
+                        <div>
+                            <p class="dashboard-label">Executive Dashboard</p>
+                            <h3>Performance geral</h3>
+                        </div>
+                        <div class="filter-pills">
+                            <span>Q3</span>
+                            <span class="active">2026</span>
+                        </div>
+                    </div>
+
+                    <div class="mini-cards">
+                        <div class="mini-card accent">
+                            <small>Receita</small>
+                            <strong>R$ 1,28M</strong>
+                            <em>+18,4%</em>
+                        </div>
+                        <div class="mini-card">
+                            <small>Conversão</small>
+                            <strong>7,6%</strong>
+                            <em>+1,2%</em>
+                        </div>
+                        <div class="mini-card">
+                            <small>Processos</small>
+                            <strong>120+</strong>
+                            <em>automatizados</em>
+                        </div>
+                    </div>
+
+                    <div class="summary-row">
+                        <div>
+                            <span>Meta</span>
+                            <strong>R$ 2,1M</strong>
+                        </div>
+                        <div>
+                            <span>Margem</span>
+                            <strong>33%</strong>
+                        </div>
+                        <div>
+                            <span>ROI</span>
+                            <strong>4,8x</strong>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="chart-area">
+                            <div class="panel-header">
+                                <span>Vendas por mês</span>
+                                <strong>+24,8%</strong>
+                            </div>
+                            <div class="bars" aria-hidden="true">
+                                <span style="--bar-height: 35%"></span>
+                                <span style="--bar-height: 52%"></span>
+                                <span style="--bar-height: 44%"></span>
+                                <span style="--bar-height: 72%"></span>
+                                <span style="--bar-height: 86%"></span>
+                                <span style="--bar-height: 100%"></span>
+                            </div>
+                            <div class="chart-axis">
+                                <span>Jan</span>
+                                <span>Fev</span>
+                                <span>Mar</span>
+                                <span>Abr</span>
+                                <span>Mai</span>
+                                <span>Jun</span>
+                            </div>
+                        </div>
+
+                        <div class="status-panel">
+                            <div class="panel-header">
+                                <span>Tempo real</span>
+                                <strong>82%</strong>
+                            </div>
+                            <ul class="status-list">
+                                <li>
+                                    <span class="dot dot-green"></span>
+                                    <span>Meta atingida</span>
+                                    <b>82%</b>
+                                </li>
+                                <li>
+                                    <span class="dot dot-blue"></span>
+                                    <span>Ativos</span>
+                                    <b>96</b>
+                                </li>
+                                <li>
+                                    <span class="dot dot-purple"></span>
+                                    <span>Pipeline</span>
+                                    <b>R$ 420k</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="insight-box">
+                        <div>
+                            <p>Desempenho</p>
+                            <strong>Dashboard em destaque</strong>
+                        </div>
+                        <span class="trend-pill">+ 12,4% ao mês</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <section id="services" class="services container">
+            <div class="section-heading reveal">
+                <span class="eyebrow">O que posso fazer</span>
+                <h2>Soluções digitais para transformar processos e aumentar resultados.</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="icon-box">01</div>
+                    <h3>Dados & BI</h3>
+                    <p>Transformo dados em indicadores, relatórios e dashboards para apoiar decisões reais, rápidas e com base analítica.</p>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                        <li>SQL</li>
+                    </ul>
+                </article>
+
+                <article class="service-card featured reveal">
+                    <div class="icon-box">02</div>
+                    <h3>Automação</h3>
+                    <p>Crio automações para eliminar tarefas repetitivas, reduzir erros e liberar tempo para foco estratégico e crescimento.</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Processos internos</li>
+                        <li>Eficiência operacional</li>
+                    </ul>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="icon-box">03</div>
+                    <h3>Sites & Landing Pages</h3>
+                    <p>Desenvolvo páginas modernas, responsivas e otimizadas para atrair leads, fortalecer a marca e vender melhor.</p>
+                    <ul>
+                        <li>HTML / CSS / JS</li>
+                        <li>Design responsivo</li>
+                        <li>UX estratégica</li>
+                    </ul>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="icon-box">04</div>
+                    <h3>Limpeza & Tratamento de Dados</h3>
+                    <p>Organizo, limpo e padronizo planilhas e bases para garantir qualidade, consistência e confiabilidade dos dados.</p>
+                    <ul>
+                        <li>Planilhas</li>
+                        <li>Validação</li>
+                        <li>Padronização</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
         <section id="work" class="projects container">
-            <h2 class="section-title">Projetos</h2>
+            <div class="section-heading align-left">
+                <span class="eyebrow">Projetos</span>
+                <h2>Trabalhos que unem estratégia, tecnologia e impacto real.</h2>
+            </div>
 
             <div class="project-grid">
                 <article class="project-card">
-                    <div class="card-image"> <img src="img/hc equipamentos 1.png" alt=""></div> <div class="card-content">
-                        <h3>WebSites</h3>
-                        <p>Website desenvolvido com HTML, CSS e JavaScript. Foco em responsividade, performance e boas prÃ¡ticas de desenvolvimento.</p>
-                        <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                        <a href="https://williamroseno1.github.io/hcequipamentos.com.br/#home" class="project-link">Ver Projeto &rarr;</a>
+                    <div class="card-image">
+                        <img src="img/analise de dados eda.png" alt="Dashboard de análise de dados">
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="card-image"><img src="img/analise de dados eda.png" alt=""></div> <div class="card-content">
+                    <div class="card-content">
+                        <span class="project-type">Dashboard & insights</span>
                         <h3>Análise de Dados</h3>
-                        <p>Análise exploratória de dados (EDA), criação de dashboards e geração de insights para apoiar decisões mais inteligentes.</p>
+                        <p>Exploração de dados, identificação de oportunidades e criação de dashboards para facilitar a tomada de decisão dos negócios.</p>
                         <div class="tags">
                             <span>Python</span>
                             <span>Pandas</span>
                             <span>Streamlit</span>
                         </div>
-                        <a href="#" class="project-link">Ver Projeto &rarr;</a>
+                        <a href="https://github.com/williamroseno1/analise-exploratoria-de-dados-eda" target="_blank" rel="noopener noreferrer" class="project-link">Ver projeto →</a>
                     </div>
                 </article>
 
-                 <article class="project-card">
-                    <div class="card-image"><img src="img/automcacao.png" alt=""></div>
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="img/automcacao.png" alt="Automação de processos com Python">
+                    </div>
                     <div class="card-content">
+                        <span class="project-type">Automação</span>
                         <h3>Automação de Processos</h3>
-                        <p>Desenvolvimento de scripts e soluções em Python para automatizar tarefas repetitivas e otimizar processos internos.</p>
+                        <p>Soluciones em Python para automatizar rotinas e reduzir erros manuais, entregando mais eficiência operacional e previsibilidade.</p>
                         <div class="tags">
                             <span>Python</span>
+                            <span>Scripts</span>
+                            <span>Processos</span>
                         </div>
-                        <a href="#" class="project-link">Ver Projeto &rarr;</a>
+                        <a href="#" class="project-link">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="img/hclocacoes.png" alt="Projeto de site para empresa de equipamentos">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-type">Website institucional</span>
+                        <h3>HC Locações</h3>
+                        <p>Site institucional com foco em apresentação profissional, navegação clara e estrutura moderna para fortalecer a marca e conversão.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsivo</span>
+                        </div>
+                        <a href="https://williamroseno1.github.io/hclocacoes.com/" class="project-link" target="_blank" rel="noopener noreferrer">Ver projeto →</a>
                     </div>
                 </article>
             </div>
         </section>
 
-
         <section id="about" class="about container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <p>Sou um profissional focado em Análise de Dados e Business Intelligence, transformando dados em informações estratégicas para apoiar a tomada de decisão.
-                Trabalho com Power BI, SQL, Excel e Python para desenvolver dashboards, automatizar processos e gerar insights que contribuem para a eficiência dos negócios,
-                oferecendo forte apoio às áreas administrativa, financeira e contábil por meio de análises e soluções orientadas por dados.</p>
+            <div class="section-heading align-left">
+                <span class="eyebrow">Sobre mim</span>
+                <h2>Profissional com visão analítica e foco em resultados.</h2>
+            </div>
 
-                <p>Além da área de dados, também possuo experiência no desenvolvimento de sites e landing pages, criando soluções digitais que unem funcionalidade,
-                desempenho e uma boa experiência para o usuário. </p>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Pandas</li>
-                    <li>Git & GitHub</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Microsoft Excel</li>
-                </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Me chamo William Roseno, profissional com foco em Análise de Dados, Business Intelligence e desenvolvimento digital. Transformo dados em informações estratégicas que ajudam empresas a agir com mais clareza e eficiência.</p>
+                    <p>Utilizo com Power BI, SQL, Excel e Python para criar dashboards, automatizar processos e apoiar áreas como administrativa, financeira e operacional com decisões baseadas em dados.</p>
+                    <p>Além disso, desenvolvo sites e landing pages com boa experiência de usuário, performance e propósito comercial, conectando presença digital com crescimento real.</p>
+                </div>
+
+                <div class="skills-panel">
+                    <h3>Competências</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Power BI</li>
+                        <li>SQL</li>
+                        <li>Git & GitHub</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Excel</li>
+                        <li>Automação</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <footer id="contact">
         <div class="container footer-content">
-            <h2>Vamos trabalhar juntos?</h2>
-            <p>Disponível para novos projetos e oportunidades.</p>
+            <span class="eyebrow">Vamos conversar?</span>
+            <h2>Posso ajudar sua empresa a evoluir com tecnologia, dados e estratégia.</h2>
             <a href="mailto:williamroseno55@gmail.com" class="email-link">williamroseno55@gmail.com</a>
 
             <div class="socials">
-                <a href="https://www.linkedin.com/in/williamroseno/">LinkedIn</a>
-                <a href="https://github.com/williamroseno1">GitHub</a>
-                <a href="https://wa.me/5527996445761?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/williamroseno/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/williamroseno1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://wa.me/5527996445761?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
-            <p class="copy">&copy; William Roseno.</p>
+
+            <p class="copy">© 2026 William Roseno.</p>
         </div>
     </footer>
 
+    <script>
+        const revealItems = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.18 });
+
+        revealItems.forEach((item) => revealObserver.observe(item));
+
+        const counters = document.querySelectorAll('.stat-number');
+
+        const animateCounter = (counter) => {
+            const target = Number(counter.dataset.target);
+            const duration = 1200;
+            const startTime = performance.now();
+
+            const tick = (time) => {
+                const progress = Math.min((time - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const value = Math.round(target * eased);
+                counter.textContent = `${value}${target === 35 ? '%' : target === 4 ? '+' : ''}`;
+
+                if (progress < 1) {
+                    requestAnimationFrame(tick);
+                } else {
+                    counter.textContent = `${target}${target === 35 ? '%' : target === 4 ? '+' : ''}`;
+                }
+            };
+
+            requestAnimationFrame(tick);
+        };
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.7 });
+
+        counters.forEach((counter) => counterObserver.observe(counter));
+
+        const heroVisual = document.querySelector('.hero-visual');
+        if (heroVisual) {
+            heroVisual.addEventListener('pointermove', (event) => {
+                const rect = heroVisual.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width;
+                const y = (event.clientY - rect.top) / rect.height;
+
+                const rotateY = (x - 0.5) * 12;
+                const rotateX = (0.5 - y) * 12;
+
+                heroVisual.querySelector('.dashboard-card').style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+            });
+
+            heroVisual.addEventListener('pointerleave', () => {
+                heroVisual.querySelector('.dashboard-card').style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+            });
+        }
+    </script>
 </body>
 </html>
+
